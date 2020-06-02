@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
 
 */
 #page-home{
-    height: 150vh;
+    height: 120vh;
     background: url('../icones/home-background.svg') no-repeat;
     background-position: 35vw bottom;
 }
@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 16px;
     display: flex;
     background-image: url('../icones/log-in.svg');
+    /* tamanho da imagem do lado da 'Cadastre um ponto de coleta'*/
     width: 20px;
     height: 20px;
 }
@@ -137,23 +138,22 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-@media(max-width: 900px){
+@media (max-width: 900px){
     #page-home{
         background-position-x: 70vw;
     }
     #page-home .content{
         align-items: center;
         text-align: center;
+        height: 70%;
     }
-    #page-home header a{
+    #page-home header a {
         position: absolute;
         bottom: 48px;
-
         left: 50%;
-        transform: translateX(-50%);
+        transform:translateX(-50%)
     }
     #page-home main{
         align-items: center;
-
     }
 }
